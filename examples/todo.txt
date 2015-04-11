@@ -1,0 +1,30 @@
+PM API WinInput Functions
+-------------------------
+spQueryCapture
+spSetFocus
+
+PM API WinPointers Functions
+----------------------------
+spSetPointerPos
+
+PM API WindowMgr Functions
+--------------------------
+spIsChild
+spIsControlEnabled
+spIsMenuItemChecked
+spIsMenuItemEnabled
+spIsMenuItemValid
+spQueryActiveWindow
+spQueryButtonCheckstate
+spQueryLboxCount
+spQueryLboxSelectedItem
+spSetWindowText
+spWindowFromID
+
+Functions related to PM API
+---------------------------
+spMPFROMSH2CH
+
+WIN API Registry Functions
+--------------------------
+spRegistry

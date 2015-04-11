@@ -1,0 +1,50 @@
+Function: spRegistry
+
+Syntax - Mode 1:  Setting single value.
+
+                  result = spRegistry(key, name, val)
+
+Syntax - Mode 2:  Setting default value of a certain key.
+
+                  result = spRegistry(key, ['DEFAULT:'], val)
+
+Syntax - Mode 3:  Querying single value.
+
+                  result = spRegistry(key, name)
+
+Syntax - Mode 4;  Query default value of a certain key.
+
+                  result = spRegistry(key [, ['DEFAULT:']] )
+
+Syntax - Mode 5:  Deleting a single value.
+
+                  result = spRegistry(key, name, 'DELETE:')
+
+Syntax - Mode 6:  Deleting default value of a certain key.
+
+                  result = spRegistry(key, ['DEFAULT:'], 'DELETE:')
+
+Syntax - Mode 7:  Deleting an key and all associated subkeys and values.
+
+                  result = spRegistry(key, 'DELETE:')
+
+Syntax - Mode 8:  Querying names of all values associated with a certain key.
+
+                  result = spRegistry(key, 'VALUES:', 'stem')
+
+Syntax - Mode 9:  Querying subkeys of a certain key.
+
+                  result = spRegistry([inifile], 'SUBKEYS:', 'stem')
+
+result: - For successful setting invocations, result will equal ''. (1,2)
+        - For successful querying invocations, result will be given the value
+          of the specified registry value. (3,4)
+        - For successful deleting invocations, result will equal ''. (5,6,7)
+
+        The error string 'ERROR:' may be returned if an error occurs.
+        Additionally the Variable 'RC' will be set to the return code of the
+        failing API Call. Return Codes of common failure situations:
+
+           2 File Not Found (Key not found)
+        1010 Bad Key
+

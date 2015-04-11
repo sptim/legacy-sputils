@@ -1,0 +1,12 @@
+RegOpenKeyEx		REGISTRY.RegOpenKeyExA
+RegQueryValueEx	REGISTRY.RegQueryValueExA
+RegCloseKey		REGISTRY,RegCloseKey
+RegOpenKeyEx		REGISTRY.RegOpenKeyExA
+RegQueryValueEx	REGISTRY.RegQueryValueExA
+RegCloseKey		REGISTRY,RegCloseKey
+_O32_RegOpenKeyEx	REGISTRY.RegOpenKeyExA
+_O32_RegQueryValueEx	REGISTRY.RegQueryValueExA
+_O32_RegCloseKey		REGISTRY,RegCloseKey
+_O32_RegOpenKeyEx	REGISTRY.RegOpenKeyExA
+_O32_RegQueryValueEx	REGISTRY.RegQueryValueExA
+_O32_RegCloseKey		REGISTRY,RegCloseKey
